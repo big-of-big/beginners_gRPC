@@ -4,7 +4,6 @@ import (
 	"log"
 
 	"github.com/big-of-big/beginners_gRPC/chat"
-	"github.com/k0kubun/pp"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )
@@ -28,6 +27,5 @@ func main() {
 		log.Fatalf("Error occurred when calling SayHello: %s", err)
 	}
 
-	pp.Println(response)
 	log.Printf("Response from Server: %s", response.Body)
 }
